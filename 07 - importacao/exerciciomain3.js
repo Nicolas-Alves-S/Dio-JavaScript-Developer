@@ -1,4 +1,4 @@
-const { gets, print } = require('./exercicio3.js');
+const { gets, print } = require('./exerciciofuncoesfuncoes3.js');
 
 const numeroentrada = Number(gets());
 

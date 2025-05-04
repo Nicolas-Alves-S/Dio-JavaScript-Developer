@@ -1,4 +1,4 @@
-const { gets, print } = require('./exercicio1.js');
+const { gets, print } = require('./exerciciofuncoes1.js');
 
 const numerotaboada = [];
 

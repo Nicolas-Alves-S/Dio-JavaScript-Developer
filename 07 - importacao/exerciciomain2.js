@@ -1,7 +1,7 @@
 // 2) Faça um programa que receba a quantidade de números e seus respectivos valores. 
 // Imprima o maior e o menor número deste conjunto.
 
-const { gets, print } = require('./exercicio2.js');
+const { gets, print } = require('./exerciciofuncoes2.js');
 
 const numerosSorteados = [];
 
