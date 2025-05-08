@@ -20,24 +20,24 @@
 
 const {gets, print} = require('./funcoes-auxiliares-ex3.js');
 
-const valorbruto = gets();
-const adicional = gets();
+const valorSalario = gets();
+const valorBeneficil = gets();
 
-function calculoporcentagem(valor, percentual){
+function calculoPorcentagem(valor, percentual){
     return valor * (percentual / 100);
 }
-function calcularpercentual(valorliquido){
-    if (valorliquido <= 1100 && valorliquido > 1100) {
+function pegarAliquota(salarial){
+    if (salarial >= 0 && salarial <= 1100) {
         return 5;
-    } else if (valorliquido <= 2500 && valorliquido > 2500) {
+    } else if (salarial >= 1100 && salarial <= 2500) {
         return 10;
     } else {
         return 15;
     }
 }
 
-const aliqui = calcularpercentual(valorbruto);
-const valorimposto = calculoporcentagem(valorbruto, adicional);
+const aliquotasImposto = pegarAliquota(valorSalario);
+const valorImposto = calculoPorcentagem(valorSalario, aliquotasImposto);
 
-const salarioTransferido = valorbruto - valorimposto + adicional;
+const salarioTransferido = valorSalario - valorImposto + valorBeneficil;
 print(salarioTransferido.toFixed(2));
